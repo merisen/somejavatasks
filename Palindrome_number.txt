@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        /* Requirements from LeetCode.com */
+        System.out.println(isPalindrome(121));
+        System.out.println(isPalindrome(-121));
+        System.out.println(isPalindrome(10));
+        System.out.println(isPalindrome(-101));
+    }
+
+    public static boolean isPalindrome(int x) {
+        String str = String.valueOf(x);
+        return str.equals(new StringBuilder(str).reverse().toString());
+    }
+}
+
